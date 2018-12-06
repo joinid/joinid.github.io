@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(bottom, #39228A 3%, #a1529f 100%);
+  background-image: -moz-linear-gradient(bottom, #39228A 3%, #a1529f 100%);
+  background-image: -o-linear-gradient(bottom, #39228A 3%, #a1529f 100%);
+  background-image: linear-gradient(to top, #39228A 3%, #a1529f 100%);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  padding: 15px 0 0 0;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  display: none;
+}
+
+span {
+  position: relative;
+  width: 100%;
+}
+
+a {
+  font-family: Open Sans;
+  font-size: 18px;
+  text-decoration: none solid rgb(255, 255, 255);
+  color: #fff;
+  padding: 0 3% 0 3%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  opacity: 0.85;
+}
+
+span>a:before {
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  top: 27px;
+  right: 15%;
+  background-color: #fff;
+  opacity: 0.85;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.12s ease-in-out 0s;
+  transition: all 0.12s ease-in-out 0s;
+}
+
+span>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+footer {
+  width: 100%;
+  background-color: darkgray;
+}
+
+h1 {
+  font-family: Open Sans;
+  font-size: 54px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  opacity: 0.95;
+}
+
+h2 {
+  font-family: Open Sans;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 0em;
+  padding-bottom: 1em;
+  padding-left: 1.9em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  opacity: 0.80;
+}
+
+.intro {
+  padding-top: 30em;
+  padding-bottom: 6em;
+}
+
+.headerbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+}
+
+.anim {
+  position: relative;
+}
+
+.screens {
+  position: relative;
+  transition: 0.35s;
+}
+
+.sketch1 {
+  position: absolute;
+  top: 150px;
+  left: -200px;
+  width: 46px;
+  height: 51px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: reveal 0.7s ease-out;
+  -webkit-animation: reveal 0.7s ease-out;
+  animation-delay: 0.2s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+.sketch2 {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 61px;
+  height: 68px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: sketch2 0.7s ease-out;
+  -webkit-animation: sketch2 0.7s ease-out;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+  transform: rotate(5deg);
+  transition: 0.4s;
+}
+
+.sketch3 {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+  width: 61px;
+  height: 68px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: sketch3 0.6s ease-out;
+  -webkit-animation: sketch3 0.6s ease-out;
+  animation-delay: 0.52s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+  transform: rotate(5deg);
+  transition: 0.4s;
+}
+
+.sketch4,
+.sketch5 {
+  position: absolute;
+  top: 105px;
+  left: 45px;
+  width: 61px;
+  height: 68px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: sketch4 0.6s ease-out;
+  -webkit-animation: sketch4 0.6s ease-out;
+  animation-delay: 0.6s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+  transform: rotate(5deg);
+}
+
+.sketch5 {
+  top: 185px;
+  left: 35px;
+}
+
+.sketch6 {
+  position: absolute;
+  top: 151px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: sketch6 0.85s ease-out;
+  -webkit-animation: sketch6 0.85s ease-out;
+  animation-delay: 0.6s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+  transition: 0.4s;
+}
+
+@keyframes reveal {
+  to {
+    transform: translateX(270px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes sketch2 {
+  to {
+    transform: translateX(145px) translateY(25px) rotate(5deg) scale(0.8);
+    opacity: 0.7;
+  }
+}
+
+@keyframes sketch3 {
+  to {
+    transform: translateX(150px) translateY(10px) rotate(20deg) scale(0.8);
+    opacity: 0.75
+  }
+}
+
+@keyframes sketch4 {
+  to {
+    transform: translateX(275px) translateY(5px) rotate(15deg) skew(2deg) scale(0.95);
+    opacity: 0.55;
+  }
+}
+
+@keyframes sketch6 {
+  to {
+    transform: translateX(430px) scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.phone,
+.pc {
+  position: absolute;
+  top: 109px;
+  left: 650px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  animation: devices 0.7s ease-out;
+  -webkit-animation: devices 0.7s ease-out;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+.pc {
+  top: 40px;
+  left: 750px;
+}
+
+@keyframes devices {
+  to {
+    transform: translateX(10px);
+    opacity: 0.75;
+  }
+}
+
+.phoneline1,
+.phoneline2 {
+  position: absolute;
+  top: 129px;
+  left: 677px;
+  width: 0px;
+  height: 12px;
+  border-radius: 4px;
+  mix-blend-mode: difference;
+  opacity: 0;
+  background-color: #ababab;
+  background-size: cover;
+  animation: phonelines 0.7s ease-out;
+  -webkit-animation: phonelines 0.7s ease-out;
+  animation-delay: 1.4s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+.phoneline2 {
+  top: 150px;
+  animation-delay: 1.5s;
+}
+
+@keyframes phonelines {
+  to {
+    width: 51px;
+    opacity: 0.4;
+  }
+}
+
+.pcline1 {
+  position: absolute;
+  top: 72px;
+  left: 787px;
+  width: 0px;
+  height: 13px;
+  border-radius: 4px;
+  mix-blend-mode: difference;
+  opacity: 0;
+  background-color: #ababab;
+  background-size: cover;
+  animation: pclines 0.75s ease-out;
+  -webkit-animation: pclines 0.75s ease-out;
+  animation-delay: 1.4s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+.pcline2 {
+  position: absolute;
+  top: 98px;
+  left: 787px;
+  width: 0px;
+  height: 13px;
+  border-radius: 4px;
+  mix-blend-mode: difference;
+  opacity: 0;
+  background-color: #ababab;
+  background-size: cover;
+  animation: pclines2 0.75s ease-out;
+  -webkit-animation: pclines2 0.75s ease-out;
+  animation-delay: 1.5s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes pclines {
+  to {
+    width: 140px;
+    opacity: 0.4;
+  }
+}
+
+@keyframes pclines2 {
+  to {
+    width: 120px;
+    opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .screens {
+    right: 3em;
+  }
+  .sketch4,
+  .sketch5 {
+    left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .screens {
+    right: 10em;
+  }
+  .sketch4,
+  .sketch5 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .screens {
+    right: 15em;
+  }
+  .sketch2,
+  .sketch3 {
+    left: -10px;
+  }
+  .sketch6 {
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .screens {
+    right: 20em;
+  }
+  .sketch2,
+  .sketch3,
+  .sketch4,
+  .sketch5 {
+    display: none;
+  }
+  .sketch6 {
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 24px;
+    padding-left: 2.2em;
+  }
+  .screens {
+    right: 38.5em;
+  }
+  .pc {
+    top: 190px;
+    left: 653px;
+  }
+  .pcline1,
+  .pcline2 {
+    top: 220px;
+    left: 687px;
+  }
+  .pcline2 {
+    top: 243px;
+  }
+  .anim {
+    left: -25px;
+    top: -56px;
+  }
+  .phone {
+    top: 40px;
+    left: 917px;
+  }
+  .phoneline1,
+  .phoneline2 {
+    top: 60px;
+    left: 944px;
+  }
+  .phoneline2 {
+    top: 80px;
+  }
+  .sketch6 {
+    top: 82px;
+    left: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+    padding-left: 1.9em;
+  }
+  .headerbox {
+    right: 20em;
+    zoom: 0.9;
+    -moz-transform: scale(0.9);
+  }
+  nav {
+    text-align: center;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headerbox {
+    right: 20em;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .headerbox {
+    right: 20em;
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .headerbox {
+    right: 20em;
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .headerbox {
+    right: 20em;
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+  }
+}
