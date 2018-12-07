@@ -64,7 +64,7 @@ span>a:hover:before {
 
 section {
   min-height: 800px;
-  padding: 6em 3em 3em 4em;
+  padding: 6em 0em 3em 0em;
   background-color: #47364f;
 }
 
@@ -120,12 +120,16 @@ h3 {
 }
 
 .leftheader, .rightheader {
-    background-image: url("/img/path1.svg");
+    background-image: url(/img/path1.svg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 650px;
+    width: 500px;
     height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 165px;
 }
 
 .leftcontent {
@@ -136,6 +140,7 @@ h3 {
 .leftcopy {
     padding-top: 2em;
     font-size: 18px;
+    padding-left: 6.2em;
 }
 
 .rightcontent  {
@@ -143,7 +148,16 @@ h3 {
 }
 
 .rightheader {
-     background-image: url("/img/path2.svg");
+  background-image: url("/img/path2.svg");
+}
+
+.rightcopy {
+  padding-left: 4.4em;
+  position: relative;
+}
+
+.right {
+  margin-right: 266px;
 }
 
 .intro {
@@ -385,6 +399,39 @@ h3 {
     opacity: 0.4;
   }
 }
+
+.frame {
+  padding-left: 2.4em;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #975fa3;
+  border: none;
+  position: absolute;
+  top: 297px;
+  left: 35px;
+  width: 139px;
+  height: 53px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  animation-fill-mode: forwards;
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.butout {
+  transform: translateX(120px) translateY(43px)rotateY(18deg) rotateX(-15deg);
+  box-shadow: -11px 20px 27px 4px rgba(0, 0, 0, 0.35);
+  transition: 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform-style: preserve-3d;
+}
+
+.icon {
+  background-color: none;
+  z-index: 9;
+}
+
 
 @media only screen and (max-width: 1200px) {
   .landing {
