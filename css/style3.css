@@ -582,6 +582,15 @@ button {
     .leftcopy {
         padding-left: 10%;
     }
+    h3 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    button {
+        top: 262px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -602,10 +611,23 @@ button {
   }
   a {
     font-size: 16px;
+      padding-left: 5%;
+      padding-right: 5%;
   }
     .screens {
         right: 39em;
     }
+    .frame {
+        zoom: 0.68;
+        -moz-transform: scale(0.68);
+    }
+    button {
+        zoom: 0.68;
+        -moz-transform: scale(0.68);
+        top: 284px;
+        left: 139px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -614,6 +636,12 @@ button {
     zoom: 0.8;
     -moz-transform: scale(0.8);
   }
+    p {
+        font-size: 0.72em;
+    }
+    button {
+        top: 274px;
+    }
 }
 
 @media only screen and (max-width: 340px) {
