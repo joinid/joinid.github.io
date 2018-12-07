@@ -414,8 +414,8 @@ button {
   background-color: #975fa3;
   border: none;
   position: absolute;
-  top: 250px;
-  left: 104px;
+  top: 294px;
+  left: 103px;
   width: 139px;
   height: 53px;
   border-radius: 15px;
@@ -425,8 +425,8 @@ button {
 }
 
 .butout {
-  transform: translateX(120px) translateY(43px)rotateY(18deg) rotateX(-15deg);
-  box-shadow: -11px 20px 27px 4px rgba(0, 0, 0, 0.35);
+  transform: translateX(120px) translateY(43px)rotateY(20deg) rotateX(-11deg);
+  box-shadow: -9px 15px 21px 4px rgba(0, 0, 0, 0.35);
   transition: 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform-style: preserve-3d;
 }

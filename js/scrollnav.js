@@ -7,7 +7,7 @@
           $('nav').fadeOut(110);
         }
         // Button scroll
-        if ($(this).scrollTop() > 980) {
+        if ($(this).scrollTop() > 680) {
           $('button').addClass('butout');
         } else {
           $('button').removeClass('butout');
