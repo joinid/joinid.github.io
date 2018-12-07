@@ -101,6 +101,10 @@ h3 {
   color: #fff;
 }
 
+p {
+  width: 35%;
+}
+
 .landing {
   display: flex;
   flex-wrap: wrap;
