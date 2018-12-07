@@ -102,7 +102,7 @@ h3 {
 }
 
 p {
-  width: 35%;
+  width: 40%;
 }
 
 .landing {
@@ -138,6 +138,7 @@ p {
 
 .leftcontent {
     color: #fff;
+    transition: 0.3s;
 }
 
 .leftcopy {
@@ -414,7 +415,7 @@ button {
   background-color: #975fa3;
   border: none;
   position: absolute;
-  top: 294px;
+  top: 272px;
   left: 103px;
   width: 139px;
   height: 53px;
@@ -441,6 +442,23 @@ button {
   .landing {
     padding: 1em 1em 1em 1em;
   }
+    .leftcontent {
+        padding-bottom: 4em;
+    }
+    .leftheader, .rightheader {
+        height: 50px;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+    p {
+        width: 60%;
+        font-size: 0.9em;
+        padding-left: 1.7em;
+    }
+    button {
+        top: 266px;
+    }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -534,6 +552,36 @@ button {
     top: 82px;
     left: 300px;
   }
+    .leftheader {
+        width: 320px;
+        padding-left: 4em;
+    }
+    .rightheader {
+        width: 240px;
+        padding-left: 7em;
+        margin-left: 0.1em;
+    }
+    p {
+        padding-left: 0;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .leftheader {
+        width: 85%;
+        padding: 0;
+        padding-right: 15%;
+    }
+    .rightheader {
+        width: 85%;
+        padding: 0;
+        margin: 0;
+        padding-left: 15%;
+    }
+    .leftcopy {
+        padding-left: 10%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -555,6 +603,9 @@ button {
   a {
     font-size: 16px;
   }
+    .screens {
+        right: 39em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -567,15 +618,20 @@ button {
 
 @media only screen and (max-width: 340px) {
   .landing {
-    right: 20em;
     zoom: 0.7;
     -moz-transform: scale(0.7);
   }
 }
 
+@media only screen and (max-width: 315px) {
+  .landing {
+    zoom: 0.65;
+    -moz-transform: scale(0.6);
+  }
+}
+
 @media only screen and (max-width: 290px) {
   .landing {
-    right: 20em;
     zoom: 0.6;
     -moz-transform: scale(0.6);
   }
@@ -583,7 +639,6 @@ button {
 
 @media only screen and (max-width: 250px) {
   .landing {
-    right: 20em;
     zoom: 0.5;
     -moz-transform: scale(0.5);
   }
