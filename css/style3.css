@@ -63,7 +63,7 @@ span>a:hover:before {
 }
 
 section {
-  min-height: 800px;
+  min-height: 1000px;
   padding: 6em 0em 3em 0em;
   background-color: #47364f;
 }
@@ -410,8 +410,8 @@ button {
   background-color: #975fa3;
   border: none;
   position: absolute;
-  top: 297px;
-  left: 35px;
+  top: 250px;
+  left: 104px;
   width: 139px;
   height: 53px;
   border-radius: 15px;
